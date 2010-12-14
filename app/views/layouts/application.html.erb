@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>aflatune</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag 'application', 'jquery.min', 'jquery.rails', :cache => 'app' %>
+  <%= csrf_meta_tag %>
+  <style>
+    body {font-family:verdana,arial; text-align:center; padding-top:100px;}
+    .box {padding: 40px; width: 500px; margin: 200px auto auto; background: #f7fff7; border: 30px solid #ffffff}
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
